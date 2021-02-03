@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.wrapper{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+}
+
+.titleinfo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.titleinfo h1{
+    font-family:fantasy;
+    font-size: 200%;
+}
+
+.titleinfo h6{
+    font-size: 80%;
+    font-family: fantasy;
+}
+
+.calculator{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    height: 90%;
+}
+
+.screen{
+    padding-bottom: 5px;
+    padding-right: 5px;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: right;
+    font-size: 300%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.buttons{
+    display:flex;
+    flex-direction: column;
+    flex:1;
+}
+
+.line{
+    display:flex;
+    flex: 1;
+}
+
+.line button{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    padding:0;
+    border: 1px black solid;
+    font-size: 200%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: filter 0.2s;
+}
+
+.line button:hover{
+    opacity: 0.7;
+}
+
+.line button:active{
+    filter: brightness(0.7);
+}
+
+.operation{
+    background-color: #df974c;
+}
+
+.operation.delete,
+.operation.backspace{
+    background-color: #d8d9db;
+}
+
+.number{
+    background-color: #d8d9db;
+}
+
+.quarter{
+    width: 25%;
+}
+
+.half{
+    width: 50%;
+}
+
+.threequarters{
+    width: 75%;
+}
